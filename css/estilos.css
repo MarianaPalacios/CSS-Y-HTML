@@ -1,0 +1,13 @@
+html,body{
+/*asi se hacen los comentarios en css*/
+/*padding es el espaciado que tiene hacia adentro-->*/
+/*margin*/ 
+    padding:0px;
+    margin:0px;
+font-size: 12px; /*tamaño de la letra*/
+
+}
+nav{
+    background-color: aquamarine;
+    padding: 10px; /*aqui es recomendable siempre redondear*/
+}
