@@ -17,6 +17,9 @@ nav{
     align-items: center; /*literal lo que hace es poner todo ordenado incluyendo imagenes es magico literal*/
     
 }
+:root{ /*ESTA MARAVILLA ES PARA GENERAR VARIABLES GUAU :O*/
+ --turquesa-color: #1BE1C3
+}
 nav ul{
 
     list-style: none; /*quita las bolitas*/
@@ -46,6 +49,43 @@ nav img {
 /*AGREGAR IMAGENES DESDE CSS*/
 
 .products {
-    background-image: url ("../imagenes/curve.png");
-    height: 100px; /*altura*/
+    background-image: url("../imagenes/curve.png");
+    height: 200px; /*altura*/
+    background-size: cover;
+    background-position: center top;
+    padding: 30%; /*Aquí se mdifica la separación entre los cuadritos*/
+    display: flex;
+    max-height: 50px;
+}
+
+.product {
+    padding: 10px;
+    margin-top: -480px; /*si pongo un valor negativo sube*/
+    
+}
+.product .content {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 20px #F5F5F5; /*aquí se generan las sombras de los cuadros*/
+    /*el 0 0 son cordenadas en x y*/
+    /*PARA MODIFICAR TODO MAS FACIL SE LE DA A INSPECCIONAR EN LA MISMA PAGINA*/ 
+   
+}
+.imgage_content{
+    text-align: center;
+}
+.content p{
+    text-decoration: none; /*quita línea*/
+}
+.main_button{
+    background-color:  #43C7B4;
+    width: 100%; /*aqui lo que hace es ocupar todo el espacio*/
+    padding: 10px;
+    font-size: 17px;
+    color:  white;
+    cursor: pointer; /*que se vea la manito*/
+    border-radius:2px ;
+}
+.main_button:hover{
+    background-color: #329D8E; /*genera profundidad al pasar el mouse*/
 }
