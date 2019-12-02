@@ -4,10 +4,48 @@ html,body{
 /*margin*/ 
     padding:0px;
     margin:0px;
-font-size: 12px; /*tamaño de la letra*/
+    font-size: 12px; /*tamaño de la letra*/
+    font-family: helvetica; /*tipo de letra*/
 
 }
 nav{
-    background-color: aquamarine;
+    display: flex; /*se pasa de vertical a horizontal*/
+    background-color: #1BE1C3;
     padding: 10px; /*aqui es recomendable siempre redondear*/
+    color: grey;
+    justify-content: space-between; /*manda todo a la derecha*/
+    align-items: center; /*literal lo que hace es poner todo ordenado incluyendo imagenes es magico literal*/
+    
+}
+nav ul{
+
+    list-style: none; /*quita las bolitas*/
+    display: flex; /*se pasa de vertical a horizontal*/
+}
+
+nav li{
+    padding-right: 20px;
+}
+nav li a {
+    color: black;
+    text-decoration: none; /*quita línea*/
+}
+/*acciones que puede tener un boton*/
+nav li a:hover{ 
+    color: white;
+}
+nav img {
+    width: 5%;    
+    height: 40%;
+}
+/*--------------------------MAIN SECTION-----------------------*/
+.main_section{
+    padding: 5%;
+    text-align: center; /*centrar el texto*/
+}
+/*AGREGAR IMAGENES DESDE CSS*/
+
+.products {
+    background-image: url ("../imagenes/curve.png");
+    height: 100px; /*altura*/
 }
